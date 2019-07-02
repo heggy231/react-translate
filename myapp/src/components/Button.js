@@ -7,10 +7,10 @@ class Button extends React.Component {
   static contextType = LanguageContext;
 
   render() {
+    // confirm if context is set right. I see English on screen
+    console.log(this.context);
     return <button className="ui button primary">Submit</button>
   }
 }
-// or 2. after create class you then write out the class.  <Class Name>.contextType = LanguageContext;
-Button.contextType = LanguageContext;
 
 export default Button;
